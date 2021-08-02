@@ -52,7 +52,7 @@ search.addEventListener("keyup",function(){
             ul.innerHTML=''
             todos.forEach((t)=>{
                 let {id,todo}=t
-                if (todo.includes(search.value)) 
+                if (todo.toLowerCase().includes(search.value.toLowerCase())) 
                 {
                     let li = document.createElement('li')
                     li.className=" list-group-item d-flex justify-content-between align-items-center"
